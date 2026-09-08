@@ -2,10 +2,8 @@ package siga;
 
 public class GerenciadorLogin {
 
-    // Chamando instancia da classe FabricaPainel para utilizazr o simple factory
-    private final FabricaPainel fabrica = new FabricaPainel();
-
-    public Painel montarPainel(String tipoUsuario) {
+    // Alterado a assinatura para utilizar o criador em vez da string
+    public Painel montarPainel(CriadorPainel criador) {
 
         // Notado de que o bloco condicional abaixo está causando um forte acoplamento
         // para o metodo montarPainel, fazendo com que cada novo tipo de usuário que for
@@ -24,9 +22,10 @@ public class GerenciadorLogin {
         // }
         // Utilizando o metodo criar da fabrica para retornar o objeto do devido painel que será
         // delegado ao usuário
-        Painel painel = fabrica.criar(tipoUsuario);
-
+        // Chamando o metodo criarPainel do criador recebido
+        Painel painel = criador.criarPainel();
         painel.montar();
+
         return painel;
     }
 }
