@@ -9,16 +9,18 @@ siga-factory/
 ├── README.md
 └── src/
     └── siga/
-        ├── CriadorPainel.java     (Factory principal dos paineis)
-        ├── CriadorPainelAluno.java     (Factory dos paineis de Aluno)
+        ├── CriadorPainel.java                (Factory principal dos paineis)
+        ├── CriadorPainelAluno.java           (Factory dos paineis de Aluno)
         ├── CriadorPainelCoordenador.java     (Factory Factory dos paineis de Coordenador)
-        ├── CriadorPainelProfessor.java     (Factory Factory dos paineis de Professor)
-        ├── Painel.java            (interface — o "Produto"; já pronta)
-        ├── PainelAluno.java       (produto concreto; já pronto)
-        ├── PainelProfessor.java   (produto concreto; já pronto)
-        ├── PainelCoordenador.java (produto concreto; já pronto)
-        ├── GerenciadorLogin.java  (Utilização de Factory Method chamando o método do criador recebido)
-        └── Main.java              (demonstra o problema em execução)
+        ├── CriadorPainelProfessor.java       (Factory Factory dos paineis de Professor)
+        ├── CriadorPaineSecretaria.java       (Factory Factory dos paineis da Secretaria)
+        ├── Painel.java                       (interface — o "Produto"; já pronta)
+        ├── PainelAluno.java                  (produto concreto; já pronto)
+        ├── PainelProfessor.java              (produto concreto; já pronto)
+        ├── PainelCoordenador.java            (produto concreto; já pronto)
+        ├── PainelSecretaria.java            (Classe de montagem do painel da secretaria)
+        ├── GerenciadorLogin.java             (Utilização de Factory Method chamando o método do criador recebido)
+        └── Main.java                         (demonstra o problema em execução)
 ```
 
 ## Como compilar e executar
