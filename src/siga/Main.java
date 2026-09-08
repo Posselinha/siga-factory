@@ -1,13 +1,5 @@
 package siga;
 
-/**
- * Ponto de entrada do SIGA (código INICIAL da atividade da Aula 5).
- *
- * Demonstra, em execução, a criação de painéis por perfil. O programa FUNCIONA
- * — mas a classe GerenciadorLogin precisa ser modificada a cada novo perfil.
- * Sua tarefa é encapsular essa criação com a Simple Factory e, depois, com o
- * padrão Factory Method.
- */
 public class Main {
 
     public static void main(String[] args) {
