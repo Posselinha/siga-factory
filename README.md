@@ -9,11 +9,12 @@ siga-factory/
 ├── README.md
 └── src/
     └── siga/
+        ├── FabricaPainel.java     (Simple Factory dos paineis)
         ├── Painel.java            (interface — o "Produto"; já pronta)
         ├── PainelAluno.java       (produto concreto; já pronto)
         ├── PainelProfessor.java   (produto concreto; já pronto)
         ├── PainelCoordenador.java (produto concreto; já pronto)
-        ├── GerenciadorLogin.java  (contém o if/else + new a refatorar)
+        ├── GerenciadorLogin.java  (Removido if/else para utilizar o simple factory)
         └── Main.java              (demonstra o problema em execução)
 ```
 
